@@ -1,0 +1,19 @@
+p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.navbar{
+    display: felx;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    
+}
+
+
+
+body{
+    background: lightslategray;
+    font-family: sans-serif;
+}
