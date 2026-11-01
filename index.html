@@ -1,60 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Vita</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portofolio - Sania Vita Dewi">
+  <title>Sania Vita Dewi || Portofolio</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+  @theme {
+    --color-manga-teal: #5BA39C;      
+    --color-manga-dark: #1A1A1A;      
+    --color-manga-yellow: #F5B914;    
+    --color-manga-red: #D93830;       
+    --color-manga-light: #F4F4F4;     
+  }
+</style>
 </head>
-<body>
-    <header>
-        <a href="#home">Vita</a>
-        <div class="navbar">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
-            <hr>
+
+<body class="bg-manga-teal text-manga-light font-serif min-h-screen">
+
+  <header class="sticky top-0 z-50 bg-manga-dark border-b border-manga-yellow/20">
+    <div class="max-w-[960px] min-h-[68px] mx-auto px-6 flex items-center justify-between flex-wrap gap-4">
+      <a href="#home" class="font-bold text-manga-yellow tracking-wide">Sania Vita Dewi</a>
+      <div class="flex gap-6 text-sm">
+        <a href="#about" class="font-bold text-manga-light hover:text-manga-yellow transition">About</a>
+        <a href="#skills" class="font-bold text-manga-light hover:text-manga-yellow transition">Skills</a>
+        <a href="#projects" class="font-bold text-manga-light hover:text-manga-yellow transition">Projects</a>
+        <a href="#contact" class="font-bold text-manga-light hover:text-manga-yellow transition">Contacts</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-[960px] mx-auto px-6">
+   
+    <section id="home" class="py-4 sm:py-6 flex flex-col sm:flex-row items-start sm:items-center gap-8">
+      <img src="assets/port.jpeg" alt="Sania Vita Dewi" class="w-45 h-45 sm:w-45 sm:h-45 rounded-lg object-cover shrink-0 border-2 border-manga-yellow shadow-lg">
+      <div class="flex flex-col">
+        <p class="text-xs font-bold tracking-[0.08cm] text-manga-yellow uppercase">Computer Engineering Student</p>
+        <h1 class="text-4xl sm:text-[2.6rem] font-bold text-white leading-tight mt-1 mb-2">Sania Vita Dewi</h1>
+        <p class="text-lg text-slate-100">Interested in game development, UI/UX prototyping, and creative digital design.</p>
+      </div>
+    </section>
+
+    <hr class="border-t-2 border-manga-yellow my-8">
+
+    <section id="about" class="py-4">
+      <p class="text-xs font-bold tracking-[0.08cm] uppercase text-manga-yellow">Get to know me</p>
+      <h2 class="text-3xl font-bold mt-1 mb-4 text-white">About Me</h2>
+      <p class="leading-relaxed text-justify text-slate-100">Computer Engineering student at Institut Teknologi Sepuluh Nopember (ITS) with a strong passion for game development and creative digital design. Experienced in building game projects using C++ and SFML, supported by technical skills in C, Python, HTML, CSS, and Tailwind CSS, as well as UI prototyping with Figma. An enthusiastic learner dedicated to bringing immersive gaming experiences and creative ideas to life.</p>
+    </section>
+
+    <hr class="border-t-2 border-manga-yellow my-8">
+
+    
+    <section id="skills" class="py-4">
+      <p class="text-xs font-bold tracking-[0.08cm] uppercase text-manga-yellow">What I work with</p>
+      <h2 class="text-3xl font-bold mt-1 mb-4 text-white">Skills</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-manga-yellow text-manga-dark font-bold px-4 py-1.5 rounded-lg p-6 shadow">C</span>
+        <span class="bg-manga-yellow text-manga-dark font-bold px-4 py-1.5 rounded-lg p-6 shadow">C++</span>
+        <span class="bg-manga-yellow text-manga-dark font-bold px-4 py-1.5 rounded-lg p-6 shadow">Python</span>
+        <span class="bg-manga-yellow text-manga-dark font-bold px-4 py-1.5 rounded-lg p-6 shadow">HTML</span>
+        <span class="bg-manga-yellow text-manga-dark font-bold px-4 py-1.5 rounded-lg p-6 shadow">Tailwind CSS</span>
+        <span class="bg-manga-yellow text-manga-dark font-bold px-4 py-1.5 rounded-lg p-6 shadow">Figma</span>
+      </div>
+    </section>
+
+    <hr class="border-t-2 border-manga-yellow my-8">
+
+    <section id="projects" class="py-4">
+      <p class="text-xs font-bold tracking-[0.08cm] uppercase text-manga-yellow">All that I've worked on</p>
+      <h2 class="text-3xl font-bold mt-1 mb-4 text-white">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-manga-dark border-l-4 border-manga-yellow rounded-lg p-6 shadow-md">
+          <p class="font-bold text-white">開かずの間 (Game)</p>
+          <p class="text-xs text-slate-300 mt-1">2D Top-Down Horror Game in C++</p>
         </div>
-    </header>
-
-    <section id="home">
-        <img src="/assets/tiremeter.jpe" width="40%" alt="Tiremeter" />
-        <p>Computer Engineering Student</p>
-        <h1>Sania Vita Dewi</h1>
-        <p>Interested in many things</p>
-        <hr>
+        <div class="bg-manga-dark border-l-4 border-manga-red rounded-lg p-6 shadow-md">
+          <p class="font-bold text-white">SatuPintu (App)</p>
+          <p class="text-xs text-slate-300 mt-1">Service Aggregator UI Prototype</p>
+        </div>
+        <div class="bg-manga-dark border-l-4 border-manga-yellow rounded-lg p-6 shadow-md">
+          <p class="font-bold text-white">Console Clash: X & O (Game)</p>
+          <p class="text-xs text-slate-300 mt-1">Tic Tac Toe Game in C</p>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
-        <p> A little about me</p>
-        <h2>About Me</h2>
-        <p> jkdvbjsbfvskb</p>
-        <hr>
-    </section>
+    <hr class="border-t-2 border-manga-yellow my-8">
 
-    <section id="skills">
-        <p> What I work with</p>
-        <h2>Skills</h2>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <hr>
-    </section>
+    <section id="contact" class="py-4">
+      <p class="text-xs font-bold tracking-[0.08cm] uppercase text-manga-yellow">Get in touch with me</p>
+      <h2 class="text-3xl font-bold mt-1 mb-4 text-white">Contact</h2>
+      <div class="flex flex-col items-start gap-3">
+        <a href="https://github.com/aavitac6"
+           class="bg-manga-yellow text-manga-dark font-bold text-center px-5 py-2 rounded-lg p-6 hover:opacity-90 transition shadow">aavitac6 (GitHub)</a>
+        <a href="mailto:saniavitadewi@gmail.com"
+           class="bg-manga-yellow text-manga-dark font-bold text-center px-5 py-2 rounded-lg p-6 hover:opacity-90 transition shadow">saniavitadewi@gmail.com (Email)</a>
+        <a href="https://www.linkedin.com/in/saniavitadewi"
+           class="bg-manga-yellow text-manga-dark font-bold text-center px-5 py-2 rounded-lg p-6 hover:opacity-90 transition shadow">Sania Vita Dewi (LinkedIn)</a>
+        <a href="https://www.instagram.com/vita.c_6/"
+           class="bg-manga-yellow text-manga-dark font-bold text-center px-5 py-2 rounded-lg p-6 hover:opacity-90 transition shadow">@vita.c_6 (Instagram)</a>
+      </div>
 
-    <section id="projects">
-        <p> What I work on</p>
-        <h2>Projects</h2>
-        <p>Novel + Manga: EXTRA STEPS: アフォガートの体温</p>
-        <hr>
-    </section>
+      <div class="flex justify-center md:justify-end w-full md:w-auto">
+      <img src="assets/chibi.png" alt="Chibi" class="w-48 sm:w-56 md:w-64 object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300">
+      </div>
 
-    <section id="contacts">
-        <p>Get in touch</p>
-        <h3>Contacts</h3>
-        <p>Email: <a href="saniavitad@gmail.com">saniavitad@gmail.com</a></p>
-        <p>Github: <a href="https://github.com/aavitac6">https://github.com/aavitac6</a></p>
     </section>
-
+  </main>
 </body>
+
 </html>
