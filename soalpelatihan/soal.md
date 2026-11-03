@@ -1,0 +1,2 @@
+1. Sintaks @theme menghasilkan utilitas baru dengan.. Fungsi dari modifier border-manga-yellow/20 pada elemen header adalah untuk memberikan garis border berwarna kuning dengan transparasi 20% pada bagian header, menjadi pemisah antara header navbar dengan body.
+2. p-4
