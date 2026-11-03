@@ -1,2 +1,3 @@
 1. Sintaks @theme menghasilkan utilitas baru dengan.. Fungsi dari modifier border-manga-yellow/20 pada elemen header adalah untuk memberikan garis border berwarna kuning dengan transparasi 20% pada bagian header, menjadi pemisah antara header navbar dengan body.
-2. p-4
+2. p-4, perlu diperbaiki karena tidak efisien. Penggunaan shadow pada badge tersebut membuat kotak tulisan timbul, terlihat lebih jelas dan menarik kotaknya dibanding tanpa shadow.
+3. Tampilan kotak yang harusnya di sebelah kanan menjadi geser ke tengah.  Alasan itu grid-cols-3 karena awalnya isinya 3 kotak tapi saya hapus 1 dan lupa mengganti itu. Gambar maskot P 
